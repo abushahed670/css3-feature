@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable</title>
+    <style>
+        :root{
+            --primary-color: red;
+            --secondary-color: pink;
+            --font-size: 12px;
+        }
+        h1{
+            /* color: steelblue; */
+            color: var(--primary-color);
+        }
+        h2{
+            /* background-color: pink; */
+            background-color: var(--secondary-color);
+        }
+        .box{
+            border: 2px solid red;
+        }
+        .box p{
+            /* color: aqua; */
+            color: var(--primary-color);
+            /* font-size: 13px; */
+            font-size: var(--font-size);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>my custom property</h1>
+    <h2>Also commonly known as css variables</h2>
+<div class="box">
+    <h4>i am planing something</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum incidunt magnam accusantium dolor exercitationem ipsam quaerat illo ad assumenda. Ducimus eius aliquid totam cupiditate quasi soluta porro amet nisi? Alias.</p>
+</div>
+
+</body>
+</html>
