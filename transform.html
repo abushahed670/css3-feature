@@ -3,10 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS3 features</title>
+    <title>Transform</title>
+    <style>
+        .container, .inner{
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            background-color: sienna;
+            border: 2px solid red;
+        }
+        .inner{
+            color: azure;
+            background-color: blue;
+            border: 2px solid purple;
+            /* transform: scale(.75, .25); */
+            /* transform: rotate(45deg); */
+            /* transform: rotate(-45deg); */
+            /* transform: scale(.5) rotate(45deg) translateX(-50px); */
+            /* transform: translateX(50px); */
+
+        }
+        .inner:hover{
+            /* transform: rotate(60deg); */
+            transform: scale(.5) rotate(45deg) translateX(-50px) translateY(75px);
+        }
+    </style>
 </head>
 <body>
-    <h1>css3 transform </h1>
-    
+    <h1>Explore Transform </h1>
+    <div class="container">
+        <div class="inner">Inner 1</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 2</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 3</div>
+    </div>
+    <div class="container">
+        <div class="inner">Inner 4</div>
+    </div>
 </body>
 </html>
